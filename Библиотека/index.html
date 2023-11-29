@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Управление библиотекой книг</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>Управление библиотекой книг</h1>
+
+    <div id="bookForm">
+      <h2>Добавить книгу</h2>
+      <input type="text" id="title" placeholder="Название книги">
+      <input type="text" id="author" placeholder="Автор">
+      <button onclick="addBook()">Добавить</button>
+    </div>
+
+    <div id="bookList">
+      <h2>Список книг</h2>
+      <input type="text" id="searchTitle" placeholder="Поиск по названию">
+      <button onclick="searchBooks()">Искать</button>
+      <button onclick="sortBooks()">Сортировать</button>
+      <ul id="books"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
